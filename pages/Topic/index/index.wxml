@@ -1,0 +1,8 @@
+
+
+<view class='listModel' wx:for="{{dataSource}}">
+  <view class='title'>{{item.cat_name}}</view>
+  <view class='model'>
+    <view class='item' wx:for="{{item.tags}}" bindtap='showTopicDetail' data-topic='{{item}}'>{{item.title}}</view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+
+<!-- <view style="display:none">
+   <image wx:for="{{images}}" wx:key="id" id="{{item.id}}" src="{{item.pic}}" bindload="onImageLoad"></image> 
+</view> -->
+
+<!--分享课  -->
+  <!-- <scroll-view class='lesson_list'  scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages" hidden='{{!(leftArr.length||rightArr.length)}}'>    -->
+  <view class='list'>
+    <view class="img_item">
+      <view class='item' wx:for="{{leftArr}}" wx:key="id" bindtap='_showShareLessonDetail' data-item='{{item}}'>
+        <image class='item_img' src="{{item.cover_image[345][0].file_url}}" style="width:100%;height:{{item.imageH}}rpx;"></image>
+        <!-- <view class='item_img' src="{{item.cover_image[345][0].file_url}}" style="width:100%;height:{{item.imageH}}rpx; background-image: url({{item.cover_image[345][0].file_url}})"></view> -->
+        <view class='item_title'>{{item.title}}</view>
+        <view class='item_data'>
+          <image class='item_portrait' src='{{item.authors[0].avatar}}'></image>
+          <view class='item_name'>{{item.authors[0].screen_name}}</view>
+          <image class='item_readImg' hidden='true' src='../images/share_see.png'></image>
+          <view class='item_readNum'>{{item.read_number}} 次阅读</view>
+        </view>
+      </view>
+    </view>
+    <view class="img_item">
+      <view class='topic' wx:if="{{topicList.length}}">
+        <view class='topic_item' wx:for="{{topicList}}" bindtap='_showTopicDetail' data-topic='{{item}}'>
+          
+          <view class='topic_item_combine'>
+            <!-- <view class='topic_item_mark'>#</view> -->
+             <image class='topic_item_markImg' src='../images/share_topicMark.png'></image> 
+          <view class='topic_item_title'>{{item.title}}</view>
+          </view>
+        </view>
+        <view class='topic_more' bindtap='_showMoreTopic'>更多话题</view>
+      </view>
+      <view class='item' wx:for="{{rightArr}}" wx:key="id" bindtap='_showShareLessonDetail' data-item='{{item}}'>
+        <image class='item_img' src="{{item.cover_image.original[0].file_url}}" style="width:100%;height:{{item.imageH}}rpx"></image>
+        <view class='item_title'>{{item.title}}</view>
+        <view class='item_data'>
+          <image class='item_portrait' src='{{item.authors[0].avatar}}'></image>
+          <view class='item_name'>{{item.authors[0].screen_name}}</view>
+          <image class='item_readImg' hidden='true' src='../images/share_see.png'></image>
+          <view class='item_readNum'>{{item.read_number}} 次阅读</view>
+        </view>
+      </view>
+    </view>
+  </view>
+   <!-- </scroll-view>    -->

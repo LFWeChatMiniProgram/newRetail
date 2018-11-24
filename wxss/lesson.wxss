@@ -1,0 +1,204 @@
+/*课程
+*/
+.lesson{
+  background: white;
+  padding-bottom: 38rpx;
+}
+.lessonImg{
+  margin-top: 0rpx;
+  margin-left:0rpx;
+  width: 750rpx;
+  height: 421rpx;
+  /* background: blueviolet; */
+  background-size: cover;
+}
+.lessonImg_markPlay{
+  width: 157rpx;
+  height: 157rpx;
+  margin-top: 133rpx;
+  margin-left:296rpx; 
+}
+.lessonTitle{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 46rpx;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 64rpx;
+  font-weight: bold;
+}
+.lesssonSubTitle{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  align-items: center;
+}
+.lesssonSubTitle_mark{
+  height: 35rpx;
+  /* margin-top: 0rpx;
+  margin-bottom: 0rpx; */
+  width: 9rpx;
+  background: #35AF5C;
+}
+.lessonDes_content{
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular;
+  color: #949494;
+  letter-spacing: 0;
+  line-height: 40rpx;
+}
+.lessonDes_learnNum{
+  margin-top: 30rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #949494;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  margin-right: 40rpx;
+}
+.lessonTags{
+  margin-left: 10rpx;
+  margin-top: 18rpx;
+  margin-right: 20rpx;
+}
+.lessonTags_item{
+  display: inline-block;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  border: 2rpx solid #35AF5C;
+  padding: 6rpx 17rpx;
+  padding-bottom: 5rpx;
+  font-size: 24rpx;
+  color: #35AF5C;
+  text-align: center;
+}
+.teacher{
+  margin-top: 50rpx;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+.teacher_info{
+  flex: 1;
+  display: flex;
+  padding-left: 40rpx;
+  align-items: center;
+}
+.teacher_portraitAndCare{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 40rpx;
+}
+.teacher_potrait{
+  width: 120rpx;
+  height: 120rpx;
+  background: lightgray;
+  border-radius: 50%;
+}
+.teacher_name{
+  margin-top: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  flex: 1;
+}
+.teacher_job{
+  margin-left: 20rpx;
+  color: darkgray;
+}
+.teacher_care{
+  margin-top: 15rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #35AF5C;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  background: white;
+}
+button::after{
+border:none;
+/* background: white; */
+}
+.line{
+  margin-top: 30rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  height: 1rpx;
+  background: #EDEDED;
+}
+.operate{
+  display: flex;
+  margin-left: 40rpx;
+  margin-top: 36rpx;
+  margin-right: 30rpx;
+  flex: 1;
+  font-size: 30rpx;
+}
+.operate_text{
+  margin-left: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #949494;
+  letter-spacing: 0;
+  text-align: left;
+  line-height: 26rpx;
+  flex: 1;
+}
+.operate_text.selected{
+  color: #949494;
+}
+.operate_collect{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.operate_collect_img{
+  width:30rpx;
+  height:30rpx;
+}
+.operate_share{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx solid darkgray;
+  border-radius: 10rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  margin-left: 10rpx;
+}
+.operate_share_img{
+  width:30rpx;
+  height:30rpx;
+}
+.operate_like{
+  margin-left: 53rpx;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex: 1;
+}
+.operate_like_img{
+  width:30rpx;
+  height:30rpx;
+}
+.operate_shareImg{
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 10rpx;
+}
+.operate_shareImg_img{
+  width:30rpx;
+  height:30rpx;
+}

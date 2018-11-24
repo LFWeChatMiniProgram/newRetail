@@ -1,0 +1,154 @@
+/* pages/Mine/index/index.wxss */
+
+.info{
+  display: flex;
+  flex-direction: column;
+  background: white;
+}
+.imgAndDetail{
+  display: flex;
+  background: white;
+}
+.info_portrait{
+  margin-right: 50rpx;
+  margin-top: 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: lightgray;
+}
+.info_detail{
+  margin-left: 50rpx;
+  margin-right: 0rpx;
+  margin-top: 30rpx;
+  flex: 1;
+}
+.info_detail_des{
+  display: flex;
+  flex: 1;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  flex-direction: row;
+  margin-top: 40rpx;
+}
+.info_detail_nameAndJob{
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  flex: 1;
+}
+.info_detail_name{
+  font-size: 52rpx;
+  height: 30rpx;
+  font-family: ArialMT;
+  color: #030303;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.info_detail_Job{
+  margin-top: 33rpx;
+  height: 26rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #949494;
+  letter-spacing: 0;
+  line-height: 26rpx;
+}
+.info_detail_updateInfo{
+  display: flex;
+  align-items: center;
+  margin-right: 30rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #35AF5C;
+  letter-spacing: 0;
+}
+.info_datas{
+  display: flex;
+  margin-top: 50rpx;
+  margin-left:0rpx;
+  margin-right: 100rpx;
+  background: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.info_datas_item{
+  display: flex;
+  flex: auto;
+  align-items: center;  
+}
+.info_datas_item_model{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.info_datas_item_mark{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-size: 36rpx;
+  font-family: PingFangSC-Semibold;
+  color: #313131;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 50rpx;
+  font-weight: bold;
+}
+.info_datas_item_text{
+  display: flex;
+  margin-top: 0rpx;
+  margin-left: 10rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 37rpx;
+}
+.info_datas_item_line{
+  margin-left: 10rpx;
+  /* background: #979797; */
+  width: 11rpx;
+  height: 15rpx;
+}
+/*
+*列表
+*/
+.list{
+  margin-top: 30rpx;
+}
+.list_item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: white;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  height: 141rpx;
+  box-shadow: 0 15rpx 20rpx 0 rgba(0,0,0,0.07);
+}
+.list_item_add{
+  margin-top: 30rpx;
+}
+.list_item_img{
+  margin-left: 48rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.list_item_title{
+  margin-left: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 32px;
+  flex: 1;
+}
+.list_item_mark{
+  margin-right: 50rpx;
+  /* background: #979797; */
+  width: 11rpx;
+  height: 15rpx;
+}

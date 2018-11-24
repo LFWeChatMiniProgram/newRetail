@@ -1,0 +1,8 @@
+<!--pages/Prepare/canvas/canvas.wxml-->
+<canvas canvas-id='1' class='canvas'></canvas>  
+<!-- <image class='bgImage' src='{{arr2[0]}}'></image> -->
+<view class='operate'>
+  <view class='operate_poster' hidden='{{isShowAuthBtn}}'   bindtap='createPoster'>生成海报</view>
+  <button class='operate_auth' open-type='openSetting' hidden='{{!isShowAuthBtn}}' >点击授权访问相册</button>
+</view>
+<!--open-type='openSetting'  hidden='{{canIUse}}'-->

@@ -1,0 +1,123 @@
+<!--pages/Home/qkDetail/qkDetail.wxml-->
+<view class='nav' hidden='{{!isFromShare}}'>
+  <view class='nav_home'>
+    <view class='nav_home_text' catchtap='backToHome'>零售前沿社首页</view>
+    <image src='../../image/other/step_mark.png' class='nav_home_img'></image>
+  </view>
+  <view class='nav_detail'>分享课详情</view>
+</view>
+<!--课程  -->
+<view class='lesson'>
+  <view class='lessonImg' style='background-image: url({{lessonDetail.cover_image["750_421"][0].file_url}})'  bindtap='showAudioDetail' data-audioList='{{lessonList}}' data-index='{{0}}'>
+    <image class='lessonImg_markPlay'  src='../../image/other/play_big.png'></image>
+  </view>
+  <view class='lessonTitle'>{{lessonDetail.title}}</view>
+  <view class='lesssonSubTitle' >
+    <view class='lesssonSubTitle_mark'></view>
+    <view class='lessonDes_content'>{{lessonDetail.sub_title}}</view>
+  </view>
+  <view class='lessonTags'>
+    <view class='lessonTags_item' wx:for="{{lessonDetail.tags}}" bindtap='showTopicDetail' data-topic='{{item}}'>{{item.title}}</view>
+  </view>
+  <view class='teacher'>
+    <view class='teacher_info'>
+      <view class='teacher_name'>分享嘉宾：{{lessonDetail.authors[0].screen_name}}</view>
+      <view class='lessonDes_learnNum'>{{lessonDetail.read_number}} 人学习</view>
+    </view>
+  </view>
+  <view class='line'></view>
+  <!--操作  -->
+  <view class='operate'>
+    <view class='operate_collect' catchtap='collectCourse'>
+      <image class='operate_collect_img' src='{{lessonDetail.is_bookmark?"../../image/other/collect_selected.png":"../../image/other/collect_normal.png"}}'></image>
+      <view class='operate_text {{lessonDetail.is_bookmark?"selected":""}} '>{{lessonDetail.bookmark_number}} 人收藏</view>
+    </view>
+    <view class='operate_like' catchtap='likeCourse'>
+      <image class='operate_like_img' src='{{lessonDetail.is_like?"../../image/other/like_selected.png":"../../image/other/like_normal.png"}}'></image>
+      <view class='operate_text {{lessonDetail.is_like?"selected":""}}' >{{lessonDetail.like_number}} 人喜欢</view>
+    </view>
+    <view class='operate_shareImg' catchtap='turnToPoster' data-lesson='{{lessonDetail}}'>
+      <image class='operate_shareImg_img' src='../../image/other/shareImg.png'></image>
+      <view class='operate_text'>一键分享</view>
+    </view>
+  </view>
+</view>
+<!--解读  -->
+<view class='reading' wx:if = "{{lessonDetail.summary}}">
+  <view class='reading_title'>解读</view>
+  <view class='reading_content'>{{lessonDetail.summary}}</view>
+</view>
+
+<!--ppt列表  -->
+<view class='pptList' wx:if="{{lessonList.length}}">
+  <view class='pptTitle'>
+    <view class='reading_title'>PPT</view>
+    <view class='pptTitle_num'>（共{{lessonList.length}}页）</view>
+  </view>
+  <view class='overFlow' wx:for="{{lessonList}}" bindtap='showAudioDetail' data-audioList='{{lessonList}}' data-index='{{index}}'>
+    <view class='pptItem'>
+      <!-- <view class='pptItem_line' hidden='{{index==0?true:fasle}}'></view> -->
+    <image class='pptItem_img' src='{{item.cover_image.original[0].file_url}}'></image>
+    <image hidden='{{item.media_type == "audio"?true:false}}' class='pptItem_markForVideo' src='../../image/other/play_big.png'></image>
+    <view class='pptItem_control' hidden='{{!item.have_audio}}'>
+      <view class='playItem' ><!--wx:if="{{item.node_audio_link}}"  -->
+        <image class='btn {{item.isPlay?"selected":""}}' src='{{item.isPlay?"../../image/other/stop.png":"../../image/other/play.png"}}' catchtap='playOrPause' data-index='{{index}}'></image>
+        <view class='progressBg'>
+          <!-- <view class='progress' style='width:{{item.isPlay?currentProgress:0}}%;'></view> -->
+          <image class='progressImgBG' src='../../image/other/audioProgress_bg.png' style='width:{{item.isPlay?(100-currentProgress):100}}%;' mode='aspectFill'></image>
+          <image class='progressImg' src='../../image/other/audioProgress.png'  style='width:{{item.isPlay?currentProgress:0}}%;' mode='aspectFill'></image>
+        </view>
+        <view class='time'>{{item.isPlay?currentLeftTime:item.audioTime}}</view>
+      </view>
+    </view>
+    </view>
+    <view class='pptItem_pageNumber'>{{index+1}}/{{lessonList.length}}</view>
+  </view>
+</view>
+
+
+
+<!--{{item.node_audio_link}}  -->
+<!--关于分享嘉宾  -->
+<view class='aboutTeacher'>
+  <view class='aboutTeacher_title'>关于分享嘉宾</view>
+  <view class='aboutTeacher_content'>
+    <image class='aboutTeacher_portrait' src='{{lessonDetail.authors[0].avatar}}'></image>
+    <view class='aboutTeacher_name'>{{lessonDetail.authors[0].screen_name}}</view>
+    <view class='aboutTeacher_job'>{{lessonDetail.authors[0].signature}}</view>
+    <form bindsubmit='formSubmit' report-submit='true'>
+      <button class='aboutTeacher_care {{lessonDetail.authors[0].is_followed?"selected":""}}' form-type='submit' catchtap='careClick'>{{lessonDetail.authors[0].is_followed?"取消关注":"+ 关注"}}</button>
+      <!-- {{lessonDetail.authors[0].follow_nums}} -->
+    </form>
+    <view class='aboutTeacher_des'>{{lessonDetail.authors[0].bio}}</view>
+    <view class='aboutTeacher_learnAboutDetail' bindtap='showTeacherDetail' data-user='{{lessonDetail.authors[0]}}'>了解详情</view>
+  </view>
+</view>
+
+<!--我也要分享  -->
+<view class='joinShare' hidden='true'>
+  <view class='joinShare_title'>参与分享</view>
+  <view class='joinShare_content'>
+    <image class='joinShare_content_img'></image>
+    <view class='joinShare_content_text'>我也要制作分享课</view>
+  </view>
+</view>
+
+
+<view class='coverView'  catchtouchmove='preventTouchMove' catchtap='hideShare' wx:if = "{{isShowShare}}">
+  <view class='share' catchtap='preventTap'>
+    <!-- <image class='share_img_close'></image> -->
+    <form bindsubmit='formSubmit' report-submit='true'>
+    <view class='share_title'>帮作者增加人气</view>
+    <view class='share_number'>将PPT分享到{{lessonDetail.goods_info.course_share_time_to_free}}个群即可收听</view>
+    <view class='share_sharedNumber'>已分享{{shareNumber}}次</view>
+    <button class='share_btn' open-type='share' form-type='submit'>立即推荐</button>
+    </form>
+  </view>
+</view>
+
+<!-- <button catchtap='backToHome'>回到首页</button> -->
+<view class='backToHome' catchtap='backToHome' hidden='true'>
+  <image class='backToHome_img' src='../../image/other/backToHome_mark.png'></image>
+  <view class='backToHome_text'>回到首页</view>
+</view>

@@ -1,0 +1,45 @@
+/* pages/Mine/aboutUs/aboutUs.wxss */
+@import "../../../wxParse/wxParse.wxss"; 
+page{
+  padding-bottom: 30rpx;
+}
+.model{
+  margin-top: 38rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 0rpx;
+  padding-bottom: 50rpx;
+  border-radius: 10rpx;
+  background: white;
+}
+.title{
+  margin-left: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #222222;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.content_bg{
+
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  padding-top: 30rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 46rpx;
+  text-shadow: 0 3px 15px rgba(153,153,153,0.20);
+}
+.content{
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  margin-top: 30rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 46rpx;
+  text-shadow: 0 3px 15px rgba(153,153,153,0.20);
+}

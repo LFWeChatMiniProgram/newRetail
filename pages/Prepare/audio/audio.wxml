@@ -1,0 +1,4 @@
+
+<view wx:for="{{dataSource}}">
+  <audioPlayer src="{{current.src}}" index = "{{index}}" isPlay="{{item.isPlay}}" bind:MusicPlay = "_MusicPlay" ></audioPlayer>
+</view>

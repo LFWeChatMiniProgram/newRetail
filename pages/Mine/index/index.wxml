@@ -1,0 +1,46 @@
+<view class='info'>
+  <view class='imgAndDetail'>
+    <view class='info_detail'>
+      <view class='info_detail_des'>
+        <view class='info_detail_nameAndJob'>
+          <view class='info_detail_name'>{{info.screen_name}}</view>
+          <view class='info_detail_Job'>{{info.signature}}</view>
+        </view>
+        <view class='info_detail_updateInfo' hidden='true' bindtap='updateInfo'>修改个人资料</view>
+      </view>
+    </view>
+    <image class='info_portrait' src='{{info.avatar}}'></image>
+  </view>
+  <view class='info_datas'>
+    <view class='info_datas_item' bindtap='showCollectList'>
+      <view class='info_datas_item_model'>
+        <view class='info_datas_item_mark'>{{info.bookmark_article_number+ info.bookmark_course_number + info.bookmark_series_section_number?info.bookmark_article_number + info.bookmark_course_number + info.bookmark_series_section_number:0}}</view>
+        <view class='info_datas_item_text'>收藏</view>
+        <image src='../../image/other/step_mark.png' class='info_datas_item_line'></image>
+      </view>
+    </view>
+    <view class='info_datas_item' bindtap='showCareList'>
+      <view class='info_datas_item_model'>
+        <view class='info_datas_item_mark'>{{info.follower_user_number+info.tag_follow_nums?info.follower_user_number+info.tag_follow_nums:0}}</view>
+        <view class='info_datas_item_text'>关注</view>
+        <image src='../../image/other/step_mark.png' class='info_datas_item_line'></image>
+      </view> 
+    </view>
+    <view class='info_datas_item' bindtap='showFansList'>
+      <view class='info_datas_item_model'>
+        <view class='info_datas_item_mark'>{{info.followed_user_number?info.followed_user_number:0}}</view>
+        <view class='info_datas_item_text'>粉丝</view>
+        <image src='../../image/other/step_mark.png' class='info_datas_item_line'></image>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='list'>
+  <block wx:for="{{list}}">
+    <view class='list_item {{index==list.length-1?"list_item_add":""}}' bindtap='listItemClick' data-index='{{index}}'>
+      <image class='list_item_img' src='{{item.imageUrl}}'></image>
+      <view class='list_item_title'>{{item.title}}</view>
+      <image src='../../image/other/step_mark.png' class='list_item_mark'></image>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,3 @@
+<view class='pathNav'>
+  <view wx:for = "{{dataSource}}" class='pathNavItem'> {{item.title}}{{index < dataSource.length - 1 ?' >':''}} </view>
+</view>

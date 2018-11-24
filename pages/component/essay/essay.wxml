@@ -1,0 +1,24 @@
+<!-- <image style='display:none' src='../../Home/images/1.png' bindload='load'></image> -->
+
+
+<!-- <scroll-view class='essay_list' wx:if="{{!isLesson}}" scroll-y="true" style="margin-top:200rpx height:{{scrollH}}px" bindscrolltolower="loadImages">  -->
+  <view class='essay_item' wx:for="{{dataSource}}" bindtap='_showEssayDetail' data-item='{{item}}'>
+    <view class='authorAndTime'>
+      <view class='essay_item_author'>
+        <image class='essay_item_author_img' src='{{item.authors[0].avatar}}'></image>
+        <view class='essay_item_author_name'>{{item.authors[0].screen_name}}</view>
+      </view>
+      <view class='essay_item_data_time2'>{{item.pubTime}}</view>
+    </view>
+    <image class='essay_item_img' src='{{item.cover_image["690_370"][0].file_url}}'></image>
+    <view class='essay_item_title'>{{item.title}}</view>
+    <view class='essay_item_des'>{{item.summary}}</view>
+    <view class='essay_item_data'>
+      <view class='essay_item_data_time'></view>
+      <image class='essay_item_data_collect_img' src='{{item.is_bookmark?"../images/collect_selected.png":"../images/collect_normal.png"}}' catchtap='collectCourse'  data-essay='{{item}}' ></image>
+      <view class='essay_item_data_collect {{item.is_bookmark?"selected":""}} ' catchtap='collectCourse' data-essay='{{item}}' >{{item.bookmark_number}} 人收藏</view>
+      <image class='essay_item_data_like_img' src='{{item.is_like?"../images/like_selected.png":"../images/like_normal.png"}}' catchtap='lilkeCourse'  data-essay='{{item}}'></image>
+      <view class='essay_item_data_like {{item.is_like?"selected":""}} ' catchtap='lilkeCourse'  data-essay='{{item}}'>{{item.like_number}} 人喜欢</view>
+    </view>
+  </view>
+<!-- </scroll-view> -->

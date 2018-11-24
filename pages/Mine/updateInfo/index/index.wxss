@@ -1,0 +1,39 @@
+/* pages/Mine/updateInfo/index/index.wxss */
+page{
+  background: #f5f5f5;
+}
+.portrait{
+  display: flex;
+  align-items: center;
+  margin-top: 60rpx;
+  background: white;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.title{
+  flex: 1;
+  margin-left: 50rpx;
+  font-size: 30rpx;
+}
+.portrait_img{
+  margin-right: 20rpx;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  background: blueviolet;
+}
+.item{
+  display: flex;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  margin-top: 10rpx;
+  background: white;
+}
+.content{
+  margin-right: 30rpx;
+  font-size: 26rpx;
+  color: gray;
+}
+.add{
+  margin-top: 60rpx;
+}

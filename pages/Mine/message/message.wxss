@@ -1,0 +1,44 @@
+page{
+  background: #f5f5f5;
+}
+.numbers{
+  margin-top: 30rpx;
+  font-size: 26rpx;
+  color: gray;
+  text-align: center;
+}
+.list{
+  margin-top: 30rpx;
+}
+.item{
+  margin: 30rpx;
+  background: white;
+  border-radius: 10rpx;
+  padding-bottom: 10rpx;
+}
+.item_titleAndTime{
+  display: flex;
+  align-items: center; 
+  padding-top: 20rpx;
+}
+.item_title{
+  margin-left: 30rpx;
+  font-size: 28rpx;
+  color: gray;
+  flex: 1;
+}
+.item_time{
+  margin-right: 20rpx;
+  font-size: 26rpx;
+  color: gray;
+}
+.item_content{
+  margin: 30rpx;
+  margin-top: 10rpx;
+  font-size: 30rpx;
+}
+.item_from{
+  margin: 30rpx;
+  font-size: 26rpx;
+  color: gray;
+}

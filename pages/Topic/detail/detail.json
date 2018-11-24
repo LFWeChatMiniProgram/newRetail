@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "",
+  "usingComponents": {
+    "segment": "../../component/segment/segment",
+    "shareLesson": "../../component/shareLesson/shareLesson",
+    "seriesLesson": "../../component/seriesLesson/seriesLesson",
+    "essay": "../../component/essay/essay"
+  }
+}

@@ -1,0 +1,30 @@
+<view class='nav'>
+  <view class='nav_item'>
+    <view class='nav_item_index'>{{currentPage + 1}}</view>
+    <view class='nav_item_allNumber'>/{{audioList.length}}</view>
+  </view>
+</view>
+
+<swiper class='swiper' bindchange='swiperClick' current='{{currentPage}}'>
+  <block wx:for="{{audioList}}">
+    <swiper-item>
+      <view class='pptBg'>
+        <image class='pptImg' src='{{item.cover_image.original[0].file_url}}' catchtap='previewImg' data-imgUrl='{{item.cover_image.original[0].file_url}}'></image>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='player' hidden='{{!currentPPTItem.have_audio}}'>
+  <view class='playItem'>
+    <!--wx:if="{{item.node_audio_link}}"  -->
+    <image class='btn {{isPlay?"selected":""}}' src='{{isPlay?"../../image/other/stop_ppt.jpg":"../../image/other/play_ppt.jpg"}}' catchtap='playOrPause' data-index='{{index}}'></image>
+    <view class='progressBg'>
+      <!-- <view class='progress' style='width:{{isPlay?currentProgress:0}}%;'></view> -->
+      <image class='progressImgBG' src='../../image/other/audioProgress_bg.png' style='width:{{isPlay?(100-currentProgress):100}}%;' mode='aspectFill'></image>
+          <image class='progressImg' src='../../image/other/audioProgress.png'  style='width:{{isPlay?currentProgress:0}}%;' mode='aspectFill'></image>
+    </view>
+    <view class='time'>{{currentLeftTime}}</view>
+  </view>
+</view>
+<!--isPlay?currentLeftTime:"00:00"  -->

@@ -1,0 +1,42 @@
+/* pages/Prepare/canvas/canvas.wxss */
+
+.canvas{
+  width: 750rpx;
+  height: 1334rpx;
+}
+.bgImage{
+  width: 750rpx;
+  height: 1534rpx;
+}
+
+.operate{
+  margin-top: 30rpx;
+  padding-bottom: 50rpx;
+  display: flex;
+  justify-content: center;
+}
+.operate_poster{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200rpx;
+  height: 80rpx;
+  background: lightblue;
+  border: 1rpx solid blue;
+  border-radius: 10rpx;
+}
+ .operate_auth{
+  margin-top: 40rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  background: white;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #555555;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 30rpx;
+} 

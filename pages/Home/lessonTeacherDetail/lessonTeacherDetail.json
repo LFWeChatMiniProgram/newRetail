@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "零售前沿社",
+  "usingComponents":{
+    "segment":"../../component/segment/segment",
+    "shareLesson":"../../component/shareLesson/shareLesson",
+    "seriesLesson":"../../component/seriesLesson/seriesLesson",
+    "essay":"../../component/essay/essay"
+  }
+}

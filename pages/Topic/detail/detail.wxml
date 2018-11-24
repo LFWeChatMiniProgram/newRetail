@@ -1,0 +1,72 @@
+<!--话题信息  -->
+<view class='info'>
+  <view class='info_title'>{{topic.title}}</view>
+  <view class='info_fans'>{{topic.follow_nums}}人关注</view>
+  <!--关注按钮  -->
+  <form bindsubmit='formSubmit' report-submit='true'>
+    <button class='careBtn {{topic.is_followed?"selected":""}}' catchtap='careTopic' form-type='submit'>{{topic.is_followed?"取消关注":"+ 关注"}}</button>
+  </form>
+</view>
+
+<!--行业专家  -->
+<view class='teachers' wx:if="{{data_teachers.length}}">
+  <!-- <view class='teachers_title'>行业专家</view> -->
+  <view class='teachers_title'>
+    <view >行业专家</view>
+    <view class='teachers_title_num'>（{{data_teachers.length}}）</view>
+  </view>
+  <view class='teachers_content'>
+    <view class='teachers_content_item' wx:for="{{data_teachers}}" bindtap='showTeacherDetail' data-user='{{item}}'>
+      <view class='teachers_content_item_flex'>
+        <view class='teachers_content_item_imgBG'>
+          <image class='teachers_content_item_img' src='{{item.avatar}}'></image>
+        </view>
+        <view class='teachers_content_item_nameAndJob'>
+          <view class='teachers_content_item_title'>{{item.screen_name}}</view>
+          <view class='teachers_content_item_job'>{{item.signature}}</view>
+        </view>
+      </view>
+    </view>
+    <view class='loadMore' hidden='{{noMore_Teachers}}' catchtap='loadMoreTeachers'>查看更多</view>
+    <!-- <view class='loadMore' hidden='{{!noMore_Teachers}}'>没有更多</view> -->
+  </view>
+</view>
+
+<!--课程  -->
+<view wx:if="{{leftArr.length+rightArr.length}}">
+  <view class='title'>
+    <view >分享课</view>
+    <view class='title_num'>（{{total_share}}）</view>
+  </view>
+  <view class='list_share'>
+    <shareLesson leftArr="{{leftArr}}" rightArr="{{rightArr}}" bind:showShareLessonDetail='_showShareLessonDetail'></shareLesson>
+  </view>
+  <view class='loadMore' hidden='{{noMore_share}}' catchtap='loadMoreShare'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_share}}'>没有更多</view> -->
+</view>
+
+<view wx:if="{{data_series.length}}" hidden='true'>
+  <view class='title'>
+    <view >系列课</view>
+    <view class='title_num'>（{{total_series}}）</view>
+  </view>
+  <view>
+    <seriesLesson dataSource="{{data_series}}" bind:showSeriesIntroduce="_showSeriesIntroduce"></seriesLesson>
+  </view>
+  <view class='loadMore' hidden='{{noMore_series}}' catchtap='loadMoreSeriesList'>查看更多</view>
+<!-- <view class='loadMore' hidden='{{!noMore_series}}'>没有更多</view> -->
+</view>
+
+<view wx:if="{{data_essay.length}}">
+  <view class='title'>
+    <view >干货</view>
+    <view class='title_num'>（{{total_essay}}）</view>
+  </view>
+  <view>
+    <essay dataSource="{{data_essay}}" bind:showEssayDetail="_showEssayDetail" bind:collectSuccess="_collectSuccess" bind:likeSuccess="_likeSuccess"></essay>
+  </view>
+  <view class='loadMore' hidden='{{noMore_essay}}' catchtap='loadMoreEssayList'>查看更多</view>
+<!-- <view class='loadMore' hidden='{{!noMore_essay}}'>没有更多</view> -->
+</view>
+
+

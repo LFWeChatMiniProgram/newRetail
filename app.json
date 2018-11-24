@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/Home/index/index",
+    "pages/Essay/index/index",
+    "pages/Topic/index/index",
+    "pages/Mine/index/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Home/lessonTeacherDetail/lessonTeacherDetail",
+    
+    "pages/Home/essayDetail/essayDetail",
+    "pages/Home/shareDetail/shareDetail",
+    "pages/Home/poster/poster",
+    "pages/Topic/detail/detail",
+    "pages/Mine/updateInfo/index/index",
+    "pages/Mine/collect/collect",
+    "pages/Mine/care/care",
+    "pages/Mine/fans/fans",
+    "pages/Mine/message/message",
+    "pages/Mine/lesson_learn/lesson_learn",
+    "pages/Mine/lesson_make/lesson_make",
+    "pages/Mine/essay/essay",
+    "pages/Mine/buy/buy",
+    "pages/Prepare/audio/audio",
+    "pages/Prepare/diyAudioPlayer/diyAudioPlayer",
+    "pages/Prepare/canvas/canvas",
+    "pages/Mine/aboutUs/aboutUs",
+    "pages/Home/shareDetail_PPT/shareDetail_PPT",
+    "pages/Mine/login/login",
+    "pages/Prepare/bgAudio/bgAudio",
+    "pages/Prepare/pathNav/pathNav"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "backgroundColor": "#ebebeb",
+  "tabBar": {
+    "selectedColor": "#333333",
+    "color": "#666666",
+    "list": [
+      {
+        "pagePath": "pages/Home/index/index",
+        "text": "课程",
+        "iconPath": "pages/image/tabBar/home_normal.png",
+        "selectedIconPath": "pages/image/tabBar/home_selected.png"
+      },
+      {
+        "pagePath": "pages/Essay/index/index",
+        "text": "干货",
+        "iconPath": "pages/image/tabBar/essay_normarl.png",
+        "selectedIconPath": "pages/image/tabBar/esssay_selected.png"
+      },
+      {
+        "pagePath": "pages/Topic/index/index",
+        "text": "话题",
+        "iconPath": "pages/image/tabBar/topic_normal.png",
+        "selectedIconPath": "pages/image/tabBar/topic_selected.png"
+      },
+      {
+        "pagePath": "pages/Mine/index/index",
+        "text": "我的",
+        "iconPath": "pages/image/tabBar/mine_normal.png",
+        "selectedIconPath": "pages/image/tabBar/mine_selected.png"
+      }
+    ]
+  }
+}

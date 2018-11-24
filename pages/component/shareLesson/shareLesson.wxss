@@ -1,0 +1,133 @@
+/* pages/component/shareLesson/shareLesson.wxss */
+.list{
+  margin-left: 20rpx;
+  margin-right: 10rpx;
+  padding-bottom: 20rpx;
+  overflow: visible;
+}
+.topic{
+  margin-top: 20rpx;
+  background: white;
+  /* border-radius: 10rpx; */
+  padding-top: 30rpx;
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+}
+.topic_item_combine{
+  display: flex;
+  align-items: center;
+}
+.topic_item_mark{
+  font-size: 30rpx;
+  color: #35AF5C;
+  font-weight: 800;
+}
+.topic_item{
+  display: inline-block;
+  margin-top: 20rpx;
+  margin-left: 25rpx;
+  
+  font-size: 26rpx;
+}
+.topic_item_markImg{
+  width: 22rpx;
+  height: 22rpx;
+}
+.topic_item_title{
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  letter-spacing: 0;
+  line-height: 28rpx;
+  margin-left: 5rpx;
+  color: #030303;
+}
+.topic_more{
+  margin-top: 50rpx;
+  padding: 20rpx;
+  padding-bottom: 40rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0;
+  line-height: 26rpx;
+  font-size: 24rpx;
+  color: #6D6D6D;
+}
+.lesson_list{
+  margin-top: 10rpx;
+  /* margin-left: 20rpx; */
+}
+.img_item {
+  /* width: 48%;
+  margin: 1%; */
+  width: 335rpx;
+  margin-left: 13rpx;
+  margin-right: 8rpx; 
+  display: inline-block;
+  vertical-align: top;
+  overflow: visible;
+}
+.item{
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: white;
+  /* border-radius: 10rpx; */
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.05);
+  position: relative;
+}
+.item_img{
+  border-top-left-radius: 0rpx;
+  border-top-right-radius: 0rpx;
+}
+.item_title{
+  font-size: 28rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+  font-family: PingFangSC-Semibold;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 40rpx;
+  font-weight: bold;
+}
+.item_data{
+  display: flex;
+  align-items: center;
+  margin-top: 36rpx;
+  padding-bottom: 15rpx;
+}
+.item_portrait{
+  margin-left: 20rpx;
+  width: 44rpx;
+  height: 44rpx;
+  border-radius: 50%;
+}
+.item_name{
+  margin-left: 10rpx;
+  flex: 1;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.item_readImg{
+  width: 47rpx;
+  height: 42rpx;
+  margin-right:0rpx;
+}
+.item_readNum{
+  margin-right: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #949494;
+  letter-spacing: 0;
+  line-height: 22rpx;
+}
+.item_markForVideo{
+  height: 36rpx;
+  width: 48rpx;
+  /* background: lightseagreen; */
+  position: absolute;
+  top: 24rpx;
+  right:24rpx;
+}

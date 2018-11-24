@@ -1,0 +1,20 @@
+<view class='list' hidden='{{!dataSource.length}}'>
+  <essay dataSource="{{dataSource}}" bind:showEssayDetail="_showEssayDetail" bind:collectSuccess = "_collectSuccess" bind:likeSuccess = "_likeSuccess"></essay>
+  <view class='loadMore' hidden='{{!noMore_essay}}'>已经到底了</view>
+</view>
+
+<view class='nav'>
+  <!--导航栏2  -->
+  <scroll-view class='scroll-view_H } ' scroll-x scroll-with-animation='true' scroll-left='{{scrollTop}}' scroll-into-view='tab-{{id}}'>
+    <view class='out'>
+      <view class='table-out'>
+        <block wx:for='{{tabList}}'>
+          <view class='table-cell {{current==index?"active":""}}'>
+            <text class='table-name {{current==index?"active":""}}' data-pos='{{index}}' catchtap='tabItemClick' id='tab-{{index}}' data-item='{{item}}'>{{item.title}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+

@@ -1,0 +1,35 @@
+<!-- <segment dataSource="{{['话题', '人']}}" bind:segmentClick='_segmentClick'></segment> -->
+
+<view class='mark_noCare' wx:if="{{!arr_topic.length&&!arr_person.length}}">您未关注任何内容</view>
+<!--话题  -->
+<view class='topic'wx:if = "{{arr_topic.length}}">
+  <view class='title'>
+    <view >话题</view>
+    <view class='title_num'>（{{total_topic}}）</view>
+  </view>
+  <view class='topic_list'>
+    <view class='topic_list_item' wx:for="{{arr_topic}}" bindtap='showTopicDetail' data-topic='{{item}}'>
+      <view class='topic_list_item_title'>{{item.title}}</view>
+      <view class='topic_list_item_cancel' catchtap='cancelCareTopic' data-topic='{{item}}'>取消关注</view>
+    </view>
+    <view class='loadMore' hidden='{{noMore_topic}}' catchtap='loadMoreTopic'>查看更多</view>
+    <!-- <view class='loadMore' hidden='{{!noMore_topic}}'>没有更多</view> -->
+  </view>
+</view>
+
+<!--人  -->
+<view class='person' wx:if = "{{arr_person.length}}">
+  <view class='title'>
+    <view >人物</view>
+    <view class='title_num'>（{{total_person}}）</view>
+  </view>
+  <view class='person_list'>
+    <view class='person_list_item' wx:for= "{{arr_person}}" bindtap='showTeacherDetail' data-user='{{item}}'>
+      <image class='person_img' src='{{item.avatar}}'></image>  
+      <view class='person_name'>{{item.screen_name}}</view>
+      <view class='person_list_item_cancel' catchtap='cancelCarePerson' data-user='{{item}}'>取消关注</view>
+    </view>
+    <view class='loadMore' hidden='{{noMore_person}}' catchtap='loadMorePerson'>查看更多</view>
+    <!-- <view class='loadMore' hidden='{{!noMore_person}}'>没有更多</view> -->
+  </view>
+</view>

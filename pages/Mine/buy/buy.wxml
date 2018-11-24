@@ -1,0 +1,22 @@
+
+<view class='title'>
+  <view >购买记录</view>
+  <view class='title_num'>（{{dataSource.length}}）</view>
+</view>
+
+<view class='list' wx:if = "{{dataSource.length}}">
+  <view class='item' wx:for = "{{dataSource}}" bindtap='showLessonDetail' data-item='{{item}}'>
+    <view class='item_timeAndLessonType'>
+      <view class='item_time'>{{item.orderTime}}</view>
+      <view class='item_lessonType'>购买自{{item.goods_type == "course"?"分享课":"系列课"}}</view>
+    </view>
+    <view class='item_line'></view>
+    <view class='item_titleAndPrice'>
+      <view class='item_title'>{{item.order_title}}</view>
+      <view class='item_price'>￥{{item.actual_price}}</view>
+    </view>
+     <view class='item_from' wx:if="{{item.goods_type == 'series_course'}}">来自：{{item.order_title}}</view> 
+  </view>
+  <view class='loadMore' hidden='{{noMore}}' catchtap='loadMore'>查看更多</view> 
+  <!-- <view class='loadMore' hidden='{{!noMore}}'>没有更多</view> -->
+</view>

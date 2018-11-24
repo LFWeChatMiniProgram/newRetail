@@ -1,0 +1,56 @@
+<view class='nav' hidden='true'>
+  <view>发现 > 专家 ></view>
+  <view class='nav_personAndTitle'> {{info.screen_name}}</view>
+</view>
+
+
+<!--关于分享嘉宾  -->
+<view class='aboutTeacher'>
+  <view class='aboutTeacher_content'>
+    <image class='aboutTeacher_portrait' src='{{info.avatar}}'></image>
+    <view class='aboutTeacher_name'>{{info.screen_name}}</view>
+    <view class='aboutTeacher_job'>{{info.signature}}</view>
+    <form bindsubmit='formSubmit' report-submit='true'>
+      <button class='aboutTeacher_care {{info.is_followed?"selected":""}}' catchtap='careClick' form-type='submit'>{{info.is_followed?"取消关注":"+ 关注"}}</button>
+      <!-- {{info.followed_user_number}}人关注 -->
+    </form>
+    <view class='aboutTeacher_des'>{{info.bio}}</view>
+  </view>
+</view>
+
+<!--课程  -->
+<view wx:if="{{data_share.length}}">
+  <view class='title'>
+    <view >分享课</view>
+    <view class='title_num'>（{{total_share}}）</view>
+  </view>
+  <view>
+    <shareLesson leftArr="{{leftArr}}" rightArr="{{rightArr}}" bind:showShareLessonDetail='_showShareLessonDetail'></shareLesson>
+  </view>
+  <view class='loadMore' hidden='{{noMore_share}}' catchtap='loadMore_share'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_share}}'>没有更多</view> -->
+</view>
+
+<view wx:if="{{data_series.length}}" hidden='true'>
+  <view class='title'>
+    <view >系列课</view>
+    <view class='title_num'>（{{total_series}}）</view>
+  </view>
+  <view>
+    <seriesLesson dataSource="{{data_series}}" bind:showSeriesIntroduce="_showSeriesIntroduce"></seriesLesson>
+  </view>
+  <view class='loadMore' hidden='{{noMore_series}}' catchtap='loadMore_series'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_series}}'>没有更多</view> -->
+</view>
+
+<view wx:if="{{data_essay.length}}">
+  <view class='title'>
+    <view >干货</view>
+    <view class='title_num'>（{{total_essay}}）</view>
+  </view>
+  <view>
+    <essay dataSource="{{data_essay}}" bind:showEssayDetail="_showEssayDetail" bind:collectSuccess="_collectSuccess" bind:likeSuccess="_likeSuccess"></essay>
+  </view>
+  <view class='loadMore' hidden='{{noMore_essay}}' catchtap='loadMore_essay'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_essay}}'>没有更多</view> -->
+</view>

@@ -1,0 +1,60 @@
+page{
+  padding-bottom: 30rpx;
+}
+.numbers{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 24rpx;
+}
+.person_list{
+  margin-top: 20rpx;
+}
+.person_list_item{
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  background: white;
+  border-radius: 10rpx;
+}
+.person_img{
+  margin-left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background: blueviolet;
+  border-radius: 50%;
+}
+
+.person_name{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  font-family: PingFangSC-Regular;
+  color: #111111;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.person_job{
+  margin-left: 30rpx;
+  flex: 1;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #666666;
+  letter-spacing: 0;
+  line-height: 22rpx;
+}
+.loadMore{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

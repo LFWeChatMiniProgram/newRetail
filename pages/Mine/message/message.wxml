@@ -1,0 +1,14 @@
+<segment dataSource="{{['未读消息','已读消息']}}" bind:segmentClick='_segmentClick'></segment>
+
+<view class='numbers' hidden='{{!messageNew}}'>当前有 2 条未读消息</view>
+
+<view class='list'>
+  <view class='item' wx:for = "{{[1,2,3,4,5,6]}}">
+    <view class='item_titleAndTime'>
+      <view class='item_title'>您关注的话题”711“有干货更新</view>
+       <view class='item_time'>2018.3.2 12:15</view> 
+    </view>
+    <view class='item_content'>曲飞宇：购物中心精细化运作管理</view>
+    <view class='item_from'>来自：曲飞宇：购物中心精细化运作管理</view>
+  </view>
+</view>

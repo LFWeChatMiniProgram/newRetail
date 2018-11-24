@@ -1,0 +1,138 @@
+
+@import "../../../wxParse/wxParse.wxss"; 
+page{
+  background: #f5f5f5;
+  padding-bottom: 30rpx;
+}
+/*
+顶部索引
+*/
+.nav{
+  display: flex;
+  align-items: center;
+  background: white;
+}
+.nav_home{
+  display: flex;
+  align-items: center;
+}
+.nav_home_text{
+  margin-left: 35rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #949494;
+  padding: 30rpx 0;
+}
+.nav_home_img{
+  margin-left: 20rpx;
+  width: 11rpx;
+  height: 15rpx;
+}
+.nav_detail{
+  margin-left: 20rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 24rpx;
+  color: #35AF5C;
+}
+
+/*
+ *干货
+*/
+
+
+/*main  */
+.sunmmary{
+  margin: 20rpx;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  margin-top: 30rxp;
+  padding: 60rpx;
+  /* border-radius: 10rpx; */
+  background: white;
+  /* text-indent: 2em; */
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #555555;
+  letter-spacing: 10;
+  line-height: 58rpx;
+  text-shadow: 0 3rpx 15rpx rgba(153,153,153,0.20);
+}
+.main{
+  margin: 20rpx;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  margin-top: 30rxp;
+  padding: 60rpx;
+  padding-top: 25rpx;
+  /* border-radius: 10rpx; */
+  background: white;
+  /* text-indent: 2em; */
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #555555;
+  letter-spacing: 10;
+  line-height: 58rpx;
+  text-shadow: 0 3rpx 15rpx rgba(153,153,153,0.20);
+}
+.wxParse-p {
+  margin-top: 30rpx;
+  padding: 0;
+}
+
+
+/* .aboutTeacher_learnAboutDetail{
+  margin-top: 30rpx;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  padding-bottom: 30rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 28rpx;
+  color: #313131;
+  text-align: center;
+  z-index: 10;
+
+}
+.aboutTeacher_learnAboutDetail::after{
+  content: "";
+  height: 10rpx;
+  display: block;
+  position: relative;
+  left: 0rpx;
+  bottom:10rpx;
+  right: 0;
+  background: #59D280;
+
+  z-index: -10;
+} */
+/*参与分享  */
+.joinShare{
+  margin-top: 30rpx;
+}
+.joinShare_title{
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  font-size: 30rpx;
+  color: gray;
+}
+.joinShare_content{
+  display: flex;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 10rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.joinShare_content_img{
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 30rpx;
+  background: blueviolet;
+}
+.joinShare_content_text{
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}

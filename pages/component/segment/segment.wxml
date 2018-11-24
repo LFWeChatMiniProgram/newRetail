@@ -1,0 +1,8 @@
+<!--pages/component/segment/segment.wxml-->
+<view>
+  <view class='tabList'>
+    <view wx:for="{{dataSource}}" class='tabItem {{tabCurrent == index ?"tabItemSelected" : ""}} "{{index < dataSource.length-1?"rightLine":""}}' data-pos='{{index}}' bindtap='_tabItemClick'>
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>

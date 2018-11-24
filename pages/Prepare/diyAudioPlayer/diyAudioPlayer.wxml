@@ -1,0 +1,10 @@
+<!--pages/Prepare/diyAudioPlayer.wxml-->
+<view class='list' >
+  <view class='item' wx:for="{{dataSource}}">
+    <view class='btn {{item.isPlay?"selected":""}}' catchtap='playOrPause' data-index='{{index}}'>{{item.isPlay?"暂停":"播放"}}</view>
+    <view class='progressBg'>
+      <view class='progress' style='width:{{item.isPlay?currentProgress:0}}%;'></view>
+    </view>
+    <view class='time'>{{item.isPlay?currentLeftTime:'0:00'}}</view>
+  </view>
+</view>

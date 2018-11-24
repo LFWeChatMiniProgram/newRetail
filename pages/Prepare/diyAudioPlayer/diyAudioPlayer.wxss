@@ -1,0 +1,35 @@
+/* pages/Prepare/diyAudioPlayer.wxss */
+.item{
+  display: flex;
+  align-items: center;
+  margin: 20rpx;
+  padding: 20rpx 10rpx;
+  border: 1rpx solid gray;
+}
+.btn{
+  background: greenyellow;
+}
+.btn.selected{
+  color: red;
+}
+
+.progressBg{
+  height: 5rpx;
+  background: blue;
+  margin-left: 30rpx;
+  flex: 1;
+}
+.progress{
+  height: 5rpx;
+  background: greenyellow;
+}
+.time{
+  margin-right: 20rpx;
+  width: 100rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  text-align: center;
+}

@@ -1,0 +1,5 @@
+
+<view class='numbers'>我制作了 6 条干货</view>
+<view >
+  <essay bind:showEssayDetail="_showEssayDetail"></essay>
+</view>

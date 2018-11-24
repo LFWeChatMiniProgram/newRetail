@@ -1,0 +1,18 @@
+
+
+<image class='logo' src='../../image/other/logo.png'></image>
+<view class='title'>零售前沿社</view>
+<view class='line'></view>
+<view class='alert'>即将登录零售前沿社，请确认是本人操作</view>
+<view class='des'>
+  <view class='point'></view>
+  <view class='des_content'>使用你的帐号登录该应用</view>
+</view>
+
+
+
+<view class='btnGroup'>
+  <button class = 'btn_login' wx:if="{{canIUse}}"  open-type='getUserInfo' bindgetuserinfo='getUserInfo' >点击授权并登录</button>
+  <button class = 'btn_login' wx:if="{{!canIUse}}"  bindtap='login' >点击登录</button>
+  <button class='cancel' bindtap='cancel'>取消</button>
+</view>

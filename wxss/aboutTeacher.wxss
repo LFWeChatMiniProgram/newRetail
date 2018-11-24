@@ -1,0 +1,121 @@
+/*关于嘉宾  */
+.aboutTeacher{
+  margin-top: 0rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  /* background: white; */
+  border-radius: 10rpx;
+}
+.aboutTeacher_title{
+  margin-left: 0rpx;
+  padding-top: 0rpx;
+
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #313131;
+  font-weight: bold;
+}
+.aboutTeacher_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 0rpx;
+  margin-top: 30rpx;
+  margin-right: 0rpx;
+  background: white;
+  border-radius: 0rpx;
+  padding-bottom: 30rpx;
+}
+.aboutTeacher_portrait{
+  margin-top: 100rpx;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  background: lightgray;
+}
+.aboutTeacher_name{
+  margin-top: 30rpx;
+  line-height: 36rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 36rpx;
+  color: #313131;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: bold;
+}
+.aboutTeacher_job{
+  margin-top: 15rpx;
+  letter-spacing: 0;
+  line-height: 28px;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #313131;
+  text-align: center;
+}
+.aboutTeacher_works{
+  display: flex;
+  margin-top: 30rpx;
+}
+.aboutTeacher_works_item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+}
+.aboutTeacher_care{
+  margin-top: 40rpx;
+  border-radius: 0rpx;
+  padding: 21rpx 38rpx;
+  border: 5rpx solid #313131;
+  letter-spacing: 0;
+  line-height: 28rpx;
+  background: #59D280;
+  font-family: PingFangSC-Semibold;
+  font-size: 28rpx;
+  color: #313131;
+  text-align: center;
+}
+.aboutTeacher_care.selected{
+  background: #E3E3E3;
+}
+button::after{
+border:none;
+}
+.aboutTeacher_des{
+  margin-top: 60rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  letter-spacing: 0;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #949494;
+  text-align: center;
+  line-height: 50rpx;
+}
+.aboutTeacher_learnAboutDetail{
+  margin-top: 30rpx;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  padding-bottom: 30rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 28rpx;
+  color: #313131;
+  text-align: center;
+  z-index: 10;
+  font-weight: bold;
+
+}
+.aboutTeacher_learnAboutDetail::after{
+  content: "";
+  height: 10rpx;
+  display: block;
+  position: relative;
+  left: 0rpx;
+  bottom:10rpx;
+  right: 0;
+  background: #59D280;
+
+  z-index: -10;
+}

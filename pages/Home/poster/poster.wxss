@@ -1,0 +1,39 @@
+ page{
+  padding-bottom: 0rpx;
+} 
+.canvas{
+  width: 750rpx;
+  height: 1334rpx;
+}
+.btn{
+  /* position: fixed; */
+  /* bottom: 0rpx; */
+  margin-top: 40rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  background: white;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #555555;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 30rpx;
+}
+.operate_auth{
+  margin-top: 40rpx;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+  background: white;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #555555;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 30rpx;
+} 

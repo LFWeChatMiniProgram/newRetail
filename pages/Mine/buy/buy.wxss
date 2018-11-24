@@ -1,0 +1,103 @@
+page{
+  padding-bottom: 30rpx;
+}
+.title{
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #313131;
+  font-weight: bold;
+}
+.title_num{
+  font-family: PingFangSC-Semibold;
+  font-size: 26rpx;
+  color: #949494;
+}
+
+.list{
+  margin-top: 30rpx;
+}
+.item{
+  margin: 30rpx;
+  margin-top: 30rpx;
+  background: white;
+  border-radius: 0rpx;
+  padding-bottom: 40rpx;
+  background: #FFFFFF;
+  box-shadow: 0 15px 20px 0 rgba(0,0,0,0.07);
+}
+.item_timeAndLessonType{
+  display: flex;
+  margin: 40rpx;
+  align-items: center;
+  padding-top: 40rpx;
+}
+.item_time{
+  letter-spacing: 0;
+  line-height: 20rpx;
+  flex: 1;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #949494;
+}
+.item_lessonType{
+  margin-left: 30rpx;
+  letter-spacing: 0;
+  line-height: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #949494;
+}
+.item_line{
+  height: 2rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  background: #EDEDED;
+}
+.item_titleAndPrice{
+  display: flex;
+  align-items: center;
+  margin: 40rpx;
+}
+.item_title{
+  flex: 1;
+  margin-right: 20rpx;
+  letter-spacing: 0;
+  line-height: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #313131;
+}
+.item_price{
+  margin-right:0rpx;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 40rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 42rpx;
+  color: #F42E36;
+}
+.item_from{
+  margin-left: 40rpx;
+  letter-spacing: 0;
+  line-height: 22rpx;
+  padding-bottom: 20rpx;
+
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #949494;
+}
+.loadMore{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

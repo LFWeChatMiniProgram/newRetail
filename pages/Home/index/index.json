@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "零售前沿社",
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "dark",
+  "usingComponents": {
+    "segment": "../../component/segment/segment",
+    "shareLesson": "../../component/shareLesson/shareLesson",
+    "seriesLesson": "../../component/seriesLesson/seriesLesson",
+    "essay": "../../component/essay/essay"
+  }
+}

@@ -1,0 +1,7 @@
+<view class='playItem'>
+  <image class='btn' src='{{isPlay?"../../image/other/stop.png":"../../image/other/play.png"}}' catchtap='playOrPause' data-index='{{index}}'></image>
+  <view class='progressBg'>
+    <view class='progress' style='width:{{isPlay?currentProgress:0}}%;'></view>
+  </view>
+  <view class='time'>{{isPlay?currentLeftTime:'0:00'}}</view>
+</view>

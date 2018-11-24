@@ -1,0 +1,23 @@
+<!--pages/component/seriesLesson/seriesLesson.wxml-->
+<!-- <image style='display:none' src='../../Home/images/1.png' bindload='load'></image> -->
+
+<!--系列课  -->
+<!-- <scroll-view class='lesson_list' scroll-y="true" style="height:{{scrollH}}px" bindscrolltolower="loadImages"> -->
+<view class='list'>
+  <view class='series_item' wx:for="{{dataSource}}" bindtap='_showSeriesIntroduce' data-item='{{item}}'>
+  <view class='series_item_imgBG'>
+  <image class="series_item_img" src='{{item.cover_image["200_200"][0].file_url}}'></image>
+  </view>
+    <view class='series_item_content'>
+      <view class='series_item_title'>{{item.title}}</view>
+      <view class='series_item_des'>{{item.sub_title}}</view>
+      <view class='series_item_info'>
+        <view class='series_item_price'>￥{{item.goods_info.price}}</view>
+        <view class='series_item_person'>{{item.authors[0].screen_name}}</view>
+        <view class='series_item_line'></view>
+        <view class='series_item_job'>{{item.authors[0].signature}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- </scroll-view> -->

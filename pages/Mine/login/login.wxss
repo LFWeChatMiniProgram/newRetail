@@ -1,0 +1,72 @@
+/* pages/Mine/login/login.wxss */
+
+.logo{
+  width: 156rpx;
+  height: 156rpx; 
+  margin-left: 297rpx;
+  margin-top: 100rpx;
+}
+.title{
+  margin-top: 40rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 40rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+  
+}
+.line{
+  margin-left: 65rpx;
+  margin-top: 60rpx;
+  margin-right: 65rpx;
+  height: 2rpx;
+  background: #DADADA;
+}
+.alert{
+  margin-top: 60rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #000000;
+  letter-spacing: 0;
+  text-align: center;
+}
+.des{
+  display: flex;
+  align-items: center;
+  margin-top: 30rpx;
+}
+.point{
+  height: 8rpx;
+  width: 8rpx;
+  background: #888888;
+  margin-left: 102rpx;
+  border-radius: 50%;
+}
+.des_content{
+  margin-left: 25rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #888888;
+  letter-spacing: 0;
+}
+.btnGroup{
+  margin-top: 90rpx;
+}
+.btn_login{
+  margin-left: 65rpx;
+  margin-right: 65rpx;
+  height: 90rpx;
+  color: white;
+  background: #04BE02;
+  border: 2rpx solid #039902;
+  border-radius: 10rpx;
+}
+.cancel{
+  margin-top: 30rpx;
+  margin-left: 65rpx;
+  margin-right: 65rpx;
+  height: 90rpx;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  border-radius: 10rpx;  
+}

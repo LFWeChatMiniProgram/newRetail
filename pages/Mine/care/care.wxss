@@ -1,0 +1,138 @@
+page{
+  padding-bottom: 30rpx;
+}
+.title{
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #313131;
+  font-weight: bold;
+}
+.title_num{
+  font-family: PingFangSC-Semibold;
+  font-size: 26rpx;
+  color: #949494;
+}
+.mark_noCare{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}
+/*话题  */
+.topic{
+  margin-top: 20rpx;
+}
+.topic_list{
+  margin-top: 20rpx;
+}
+.topic_list_item{
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  background: white;
+  border-radius: 0rpx;
+  background: #FFFFFF;
+  box-shadow: 0 15rpx 20rpx 0 rgba(0,0,0,0.07);
+}
+.topic_list_item_title{
+  font-size: 30rpx;
+  margin-left: 30rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  flex: 1;
+  font-family: PingFangSC-Regular;
+  color: #111111;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.topic_list_item_cancel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+  border-radius: 0rpx;
+  height: 50rpx;
+  width: 130rpx;
+  /* padding: 15rpx 20rpx; */
+  font-size: 24rpx;
+  /* background: rgba(53,175,92,0.10); */
+  border: 2rpx solid  #313131;
+  font-family: PingFangSC-Regular;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 24rpx;
+}
+
+/*人物  */
+.person{
+  margin-top: 20rpx;
+}
+.person_list{
+  margin-top: 20rpx;
+}
+.person_list_item{
+  display: flex;
+  align-items: center;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  margin-top: 30rpx;
+  background: white;
+  border-radius: 0rpx;
+  background: #FFFFFF;
+  box-shadow: 0 15rpx 20rpx 0 rgba(0,0,0,0.07);
+}
+.person_img{
+  margin-left: 30rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background: lightgray;
+  border-radius: 50%;
+}
+
+.person_name{
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  padding-top: 35rpx;
+  padding-bottom: 35rpx;
+  flex: 1;
+  font-family: PingFangSC-Regular;
+  color: #111111;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.person_list_item_cancel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+  border-radius: 0rpx;
+  height: 50rpx;
+  width: 130rpx;
+  /* padding: 15rpx 20rpx; */
+  font-size: 24rpx;
+  /* background: rgba(53,175,92,0.10); */
+  border: 2rpx solid  #313131;
+  font-family: PingFangSC-Regular;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 24rpx;
+}
+.loadMore{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

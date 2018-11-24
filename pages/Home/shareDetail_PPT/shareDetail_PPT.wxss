@@ -1,0 +1,110 @@
+/* pages/Home/shareDetail_PPT/shareDetail_PPT.wxss */
+page{
+  background: black;
+}
+.nav{
+  background: #222222;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_item{
+  display: flex;
+}
+.nav_item_index{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #35AF5C;
+  letter-spacing: 0;
+  text-align: center;
+}
+.nav_item_allNumber{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: white;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+
+.swiper{
+  height: 1000rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pptBg{
+  height: 1000rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pptImg{
+  width: 750rpx;
+  height: 422rpx;
+  background: lightgray;
+}
+
+
+.player{
+  position: fixed;
+  bottom: 0rpx;
+  height: 120rpx;
+  width: 100%;
+  background: #222222;
+}
+/*
+音频播放器
+*/
+.playItem{
+  display: flex;
+  align-items: center;
+  margin: 30rpx 40rpx;
+  margin-right: 40rpx;
+  flex: 1;
+}
+.btn{
+  width: 60rpx;
+  height: 60rpx;
+}
+.btn.selected{
+  color: red;
+}
+.progressBg{
+  /* height: 6rpx; */
+  height: 34rpx;
+  /* background:  #EEEEEE; */
+  margin-left: 30rpx;
+  flex: 1;
+  position: relative;
+}
+.progress{
+  height: 34rpx;
+  background: rgba(53,175,92,0.70);
+}
+.progressImgBG{
+  width: 100%;
+  height: 34rpx;
+  margin: 0rpx;
+  position: absolute;
+  right: 0rpx;
+}
+.progressImg{
+  height: 34rpx;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0rpx;
+}
+.time{
+  width: 90rpx;
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 24rpx;
+}
+

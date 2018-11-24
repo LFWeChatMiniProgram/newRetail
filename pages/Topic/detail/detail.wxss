@@ -1,0 +1,164 @@
+page{
+  padding-bottom: 30rpx;
+}
+/*话题信息  */
+.info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30rpx;
+  background: white; 
+  padding-bottom: 106rpx;
+}
+.info_title{
+  flex: 1;
+  margin-top: 40rpx;
+  letter-spacing: 0;
+  font-family: PingFangSC-Semibold;
+  font-size: 60rpx;
+  color: #313131;
+  text-align: center;
+  line-height: 84rpx;
+  font-weight: bold;
+}
+.info_fans{
+  margin-top: 20rpx;
+  font-family: PingFangSC-Regular;
+  letter-spacing: 0;
+  font-size: 28rpx;
+  color: #949494;
+  text-align: center;
+  line-height: 50px;
+}
+/*关注按钮  */
+.careBtn{
+border-radius: 0rpx;
+  padding: 21rpx 38rpx;
+  border: 5rpx solid #313131;
+  letter-spacing: 0;
+  line-height: 28rpx;
+  background: #59D280;
+  font-family: PingFangSC-Semibold;
+  font-size: 28rpx;
+  color: #313131;
+  text-align: center;
+}
+.careBtn.selected{
+  background: #E3E3E3;
+}
+button::after{
+  border: none;
+}
+
+/*行业专家  */
+.teachers{
+  margin-top: 30rpx;
+  overflow: visible;
+  padding-bottom: 20rpx;
+}
+.teachers_title{
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #313131;
+  font-weight: bold;
+}
+.teachers_title_num{
+  font-family: PingFangSC-Semibold;
+  font-size: 26rpx;
+  color: #949494;
+}
+.teachers_content{
+  margin-top: 10rpx;
+  overflow: visible;
+}
+.teachers_content_item{
+  display: inline-block;  
+  width: 690rpx;
+  height: 160rpx;
+  margin-left: 30rpx;
+  margin-top: 30rpx;
+  border-radius: 0rpx;
+  background: white;
+  box-shadow: 0 10px 15px 0 rgba(0,0,0,0.05);
+}
+.teachers_content_item_flex{
+  display: flex;
+  align-items: center;
+  padding: 20rpx;
+}
+.teachers_content_item_imgBG{
+  height: 80rpx;
+  width: 80rpx;
+  margin-left: 20rpx;
+}
+.teachers_content_item_img{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0rpx;
+  background: lightgray;
+  border-radius: 50%;
+}
+.teachers_content_item_nameAndJob{
+  margin-left:20rpx; 
+  font-size: 30rpx;
+  padding: 20rpx;
+  /* width: 160rpx; */
+  letter-spacing: 0;
+  line-height: 27rpx;
+
+  font-family: PingFangSC-Semibold;
+  color: #313131;
+
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-line-clamp:1;
+  -webkit-box-orient:vertical;
+}
+.teachers_content_item_job{
+  margin-top: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  overflow: hidden;
+
+  color: #949494;
+}
+/*课程相关  */
+.title{
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #313131;
+  font-weight: bold;
+}
+.title_num{
+  font-family: PingFangSC-Semibold;
+  font-size: 26rpx;
+  color: #949494;
+}
+.list_share{
+  overflow: visible;
+}
+
+.loadMore{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

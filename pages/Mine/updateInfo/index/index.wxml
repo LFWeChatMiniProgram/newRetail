@@ -1,0 +1,10 @@
+
+<view class='portrait'>
+  <view class='title'>头像</view>
+  <image class='portrait_img'></image>
+</view>
+
+<view wx:for = "{{itemDatas}}" class='item {{index==6?"add":""}}'>
+  <view class='title'>{{item.title}}</view>
+  <view class='content'>{{item.content}}</view>
+</view>

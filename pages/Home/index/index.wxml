@@ -1,0 +1,70 @@
+
+
+
+<!--分享课  -->
+<!-- <scroll-view bindscroll='refresh_share' scroll-y> -->
+<view hidden="{{!(isShare)}}" class='lesson_list'>
+  <shareLesson topicList="{{topicList}}" leftArr="{{leftArr}}" rightArr ="{{rightArr}}"bind:showShareLessonDetail='_showShareLessonDetail' isHaveTopic = "true" bind:showMoreTopic = "_showMoreTopic" bind:showTopicDetail="_showTopicDetail"></shareLesson>
+  <view class='loadMore' hidden='{{!noMore_share}}'>已经到底了</view>
+</view>
+<!-- </scroll-view> -->
+
+<!--系列课  -->
+<!-- <scroll-view> -->
+<view hidden="{{!(isSeries)}}" class='series_list'>
+  <seriesLesson dataSource ="{{seriesDataSource}}" bind:showSeriesIntroduce="_showSeriesIntroduce"></seriesLesson>
+  <view class='loadMore' hidden='{{!noMore_series}}'>已经到底了</view>
+</view>
+<!-- </scroll-view> -->
+
+
+<!--我的课  -->
+<view hidden='{{!isMine}}' class='lesson_list'>
+  <view class='noLesson' hidden='{{(leftArr_my.length + rightArr_my.length + data_series_my.length)}}'>
+    <view class='noLesson_title'>无课程</view>
+    <image class='noLesson_img' src='../../image/other/noLesson.png'></image>
+  </view>
+
+  <view wx:if="{{leftArr_my.length + rightArr_my.length}}">
+    <!-- <view class='lesson_markTitle'>分享课（{{total_myShare}}）</view> -->
+    <view class='title'>
+      <view >分享课</view>
+      <view class='title_num'>（{{total_myShare}}）</view>
+    </view>
+    <shareLesson leftArr="{{leftArr_my}}" rightArr ="{{rightArr_my}}"bind:showShareLessonDetail='_showShareLessonDetail'></shareLesson>
+    <view class='loadMore' hidden='{{noMore_share}}' catchtap='loadMore_share'>查看更多</view>
+    <!-- <view class='loadMore' hidden='{{!noMore_share}}'>没有更多</view> -->
+  </view>
+  
+  <view wx:if="{{data_series_my.length}}">
+    <!-- <view class='lesson_markTitle' >系列课（{{total_MySeries}}）</view> -->
+    <view class='title'>
+      <view >系列课</view>
+      <view class='title_num'>（{{total_MySeries}}）</view>
+    </view>
+    <seriesLesson dataSource ="{{data_series_my}}"bind:showSeriesIntroduce="_showSeriesIntroduce"></seriesLesson>
+    <view class='loadMore' hidden='{{noMore_series}}' catchtap='loadMore_series'>查看更多</view>
+    <!-- <view class='loadMore' hidden='{{!noMore_series}}'>没有更多</view> -->
+  </view>
+</view>
+
+<view class='top'>
+  <!--课程选项  -->
+  <view  class='lessonSegment'>
+    <view class='lessonSegment_item {{isShare?"selected":""}}' bindtap='lessonSegmentClick' data-tag='0'>
+      <text class='lessonSegment_item {{isShare?"selected":""}}'>分享课</text>
+    </view>
+    <view class='lessonSegment_item {{isSeries?"selected":""}}' bindtap='lessonSegmentClick' data-tag='1' hidden='true'>
+      <text class='lessonSegment_item {{isSeries?"selected":""}}'>系列课</text>
+    </view>
+    <view class='lessonSegment_item {{isMine?"selected":""}}' bindtap='lessonSegmentClick' data-tag='2'>
+      <text class='lessonSegment_item {{isMine?"selected":""}}'>我的课</text>
+    </view>
+  </view>
+</view>
+
+
+<!--登录相关  -->
+ <!-- <view class='coverView'  wx:if="{{!hasUserInfo && canIUse}}" catchtouchmove='preventTouchMove'>
+  <button open-type='getUserInfo' bindgetuserinfo="getUserInfo">点击登录</button>
+</view>  -->

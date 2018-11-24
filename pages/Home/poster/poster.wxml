@@ -1,0 +1,5 @@
+<view >
+  <canvas canvas-id='1' class='canvas'></canvas>  
+</view>
+<view class='btn' hidden='{{isShowAuthBtn}}' catchtap='createPoster'>保存图片，发给好友或分享朋友圈</view>
+<button class='operate_auth' open-type='openSetting' hidden='{{!isShowAuthBtn}}' >点击授权访问相册,保存海报</button>

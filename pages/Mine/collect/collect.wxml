@@ -1,0 +1,49 @@
+
+<view class='mark_noCare' wx:if="{{!arr_share.length&&!arr_series.length&&!arr_essay.length}}">您未收藏任何内容</view>
+<view class='list' wx:if="{{arr_share.length}}">
+<view class='title'>
+  <view >分享课</view>
+  <view class='title_num'>（{{total_share}}）</view>
+</view>
+  <view class='item' wx:for="{{arr_share}}" bindtap='showShareDetail' data-item='{{item}}'>
+    <view class='item_content'>
+      <view class='item_title'>{{item.title}}</view>
+      <view class='item_cancelCollect' catchtap='cancelCollect_share' data-lesson='{{item}}'>取消收藏</view>
+    </view>
+    <!-- <view class='item_from'>来自：{{item.authors[0].screen_name}}：{{item.title}}</view>  -->
+  </view>
+  <view class='loadMore' hidden='{{noMore_share}}' bindtap='loadMore_share'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_share}}'>没有更多</view>   -->
+</view>
+
+<view class='list' wx:if="{{arr_series.length}}">
+  <view class='title'>
+    <view >系列课</view>
+  <view class='title_num'>（{{total_series}}）</view>
+</view>
+  <view class='item' wx:for="{{arr_series}}" bindtap='showSeriesDetail' data-item='{{item}}'>
+    <view class='item_content'>
+      <view class='item_title'>{{item.title}}</view>
+      <view class='item_cancelCollect' catchtap='cancelCollect_series' data-lesson='{{item}}'>取消收藏</view>
+    </view>
+    <view class='item_from'>来自：{{item.series_course.series_course_title}}</view>   
+  </view>
+  <view class='loadMore' hidden='{{noMore_series}}' bindtap='loadMore_series'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_series}}'>没有更多</view> -->
+</view>
+
+<view class='list' wx:if="{{arr_essay.length}}">
+  <view class='title'>
+    <view >干货</view>
+    <view class='title_num'>（{{total_essay}}）</view>
+  </view>
+  <view class='item' wx:for="{{arr_essay}}" bindtap='showEssayDetail' data-item='{{item}}'>
+    <view class='item_content'>
+      <view class='item_title'>{{item.title}}</view>
+      <view class='item_cancelCollect' catchtap='cancelCollect_essay' data-lesson='{{item}}'>取消收藏</view>
+    </view>
+    <!-- <view class='item_from'>来自：{{item.authors[0].screen_name}}：{{item.title}}</view>    -->
+  </view>
+  <view class='loadMore' hidden='{{noMore_essay}}' bindtap='loadMore_essay'>查看更多</view>
+  <!-- <view class='loadMore' hidden='{{!noMore_essay}}'>没有更多</view> -->
+</view>

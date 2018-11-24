@@ -1,0 +1,10 @@
+<view class='numbers'>当前有 {{dataSource.length}} 个粉丝</view>
+<view class='person_list' wx:if = "{{dataSource.length}}">
+  <view class='person_list_item' wx:for="{{dataSource}}" bindtap='showTeacherDetail' data-user='{{item}}'>
+    <image class='person_img'></image>
+    <view class='person_name'>{{item.screen_name}}</view>
+    <view class='person_job'>{{item.signature}}</view>
+  </view>
+  <view class='loadMore' hidden='{{noMore}}' bindtap='loadMore'>查看更多</view>
+  <view class='loadMore' hidden='{{!noMore}}'>没有更多</view> 
+</view>

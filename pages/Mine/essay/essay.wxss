@@ -1,0 +1,10 @@
+page{
+  background: #f5f5f5;
+  padding-bottom: 30rpx;
+}
+.numbers{
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: gray;
+}

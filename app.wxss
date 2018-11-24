@@ -1,0 +1,25 @@
+
+@import "wxss/lesson.wxss"; 
+@import "wxss/aboutTeacher";
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+page{
+  background: #F2F2F2;
+}
+.lesson_markTitle{
+  padding-top: 30rpx;
+  margin-left: 20rpx;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #555555;
+  letter-spacing: 0;
+  line-height: 28rpx;
+}

@@ -1,0 +1,13 @@
+<segment dataSource="{{['分享课', '系列课']}}" bind:segmentClick='_segmentClick'></segment>
+
+<!--分享课  -->
+<view hidden="{{!isShare}}" class='lesson_list'>
+  <view class='numbers'>当前有 10 门分享课</view>
+  <shareLesson bind:showShareLessonDetail='_showShareLessonDetail'></shareLesson>
+</view>
+
+<!--系列课  -->
+<view hidden="{{isShare}}" class='lesson_list'>
+  <view class='numbers'>当前有 6 门系列课</view>
+  <seriesLesson bind:showSeriesIntroduce="_showSeriesIntroduce"></seriesLesson>
+</view>

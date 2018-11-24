@@ -1,0 +1,136 @@
+/*
+顶部导航条
+*/
+page{
+  overflow: visible;
+}
+.nav{
+  position: fixed;
+  top: 0rpx;
+  width: 750rpx;
+  margin-top: -20rpx;
+}
+.scroll-view_H{
+  background: #fff;
+  height: 140rpx;
+  margin: 0rpx;
+  margin-top:20rpx; 
+  padding: 0rpx;
+  /* position: absolute; */
+  z-index: 50;
+  top: 0rpx;
+  left: 0rpx;
+  border-bottom: 1rpx solid #eee; 
+  border-top: 1rpx solid #eee;
+}
+  /*
+  隐藏ScrollView滚动条
+  */
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+.scroll-view_Float{
+  margin-top: 80rpx; 
+  position: fixed;
+}
+.out{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: #fff;
+  /* padding-bottom: 45rpx; */
+  /* padding-top: 45rpx; */
+}
+.table-out{
+  width: 100%;
+  height: 100%;
+  background: #fff; 
+  white-space: nowrap; 
+  display: flex;
+  margin: 0rpx;
+  /* align-items: flex-end; */
+}
+.table-name{
+   display: flex; 
+  /* display: inline-block; */
+  align-items: center;
+  /* width: 140rpx; */
+  margin-left: 10rpx;
+  padding: 20rpx 20rpx 14rpx 20rpx;
+  box-sizing: border-box; 
+  position: relative;
+  font-family: PingFangSC-Regular;
+  font-size: 28rpx;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 30rpx;
+}
+.table-name.active{
+  padding: 20rpx 20rpx 14rpx 20rpx;
+  /* box-sizing: border-box; */
+  font-family: PingFangSC-Semibold;
+  font-size: 42rpx;
+  color: #030303;
+  letter-spacing: 0;
+  line-height: 53rpx;
+  position: relative;
+  z-index: 10;
+  font-weight: bold;
+}
+/* .table-name.table-name.active::after{
+  content: '';
+  background: #59D280;
+  display: block;
+  height: 10rpx;
+  position: absolute;
+  left: 20rpx;
+  right: 20rpx;
+  bottom: 45rpx;
+  transform: translateY(-5rpx);
+  z-index: 0;
+} */
+.table-cell{
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40rpx;
+}
+.table-cell.active:after{
+  content: '';
+  background: #59D280;
+  display: block;
+  height: 10rpx;
+  position: absolute;
+  left: 30rpx;
+  right: 20rpx;
+  bottom: 45rpx;
+  transform: translateY(-11rpx);
+  z-index: 0;
+}
+.table-line{
+  width: 60rpx;
+  height: 6rpx;
+  background-color: #e64340;
+  position: absolute;
+  bottom: 0rpx;
+  box-sizing: border-box;
+}
+
+/*列表  */
+.list{
+  margin-top: 180rpx;
+  padding-bottom: 30rpx;
+  overflow: visible;
+}
+
+.loadMore{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

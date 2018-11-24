@@ -1,0 +1,15 @@
+
+  <audio 
+  src="{{src}}" 
+  poster='{{poster}}'
+  name='{{name}}'
+  author='{{author}}'
+  controls bindended='MusicEnd' 
+  bindtimeupdate='MusicTimeUpdate' 
+  action="{{isPlay?action_play:action_pause}}" 
+  bindplay='MusicPlay' 
+  data-index='{{index}}'>
+    <view class="free-MusicProgress">
+      <view style="width:{{progress}}%;"></view>
+    </view>
+  </audio>

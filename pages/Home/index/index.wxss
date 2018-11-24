@@ -1,0 +1,162 @@
+/* pages/Home/index/index.wxss */
+page{
+  padding-bottom: 20rpx;
+}
+.top{
+  position: fixed;
+  width: 750rpx;
+  top: 0rpx;
+  background: #f5f5f5;
+  /* margin-left: -7rpx;
+  margin-right: -7rpx; */
+}
+
+/*
+课程选项
+*/
+.lessonSegment{
+  display: flex;
+  align-items: flex-end;
+  padding-top: 45rpx;
+  background: white;
+  padding-bottom: 45rpx;
+}
+.lessonSegment_item{
+  margin-left: 16rpx;
+  font-size: 28rpx;
+  font-family: PingFangSC-Regular,Noto SansCJK;
+  color: #313131;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+.lessonSegment_item.selected{
+  font-family: PingFangSC-Semibold,Noto SansCJK;
+  font-size: 42rpx;
+  color: #030303;
+  letter-spacing: 0;
+  line-height: 44rpx;
+  font-weight: bold;
+  z-index: 10;
+}
+.lessonSegment_item_text.selected{
+  font-family: PingFangSC-Semibold,Noto SansCJK;
+  font-size: 44rpx;
+  color: #030303;
+  letter-spacing: 0;
+  line-height: 44rpx;
+  font-weight: 500;
+
+  z-index: 30;
+}
+.lessonSegment_item.lessonSegment_item.selected::after{
+  content: "";
+  height: 10rpx;
+  display: block;
+  position: absolute;
+  left: 20rpx;
+  /* bottom: -2rpx; */
+  right: 0;
+  background: #59D280;
+
+  transform: translateY(-10rpx);
+  z-index: -10;
+}
+/*
+瀑布流列表，分享课
+*/
+.lesson_list{
+  margin-top: 150rpx;
+  margin-left: 0rpx;
+  margin-right: 0rpx;
+  overflow: visible;
+}
+/*系列课  */
+.series_list{
+  margin-top: 122rpx;
+  overflow: visible;
+}
+
+/*
+干货
+*/
+.essay_list{
+  margin-top: 200rpx;
+  padding-bottom: 20rpx;
+}
+
+
+/*登录相关  */
+.coverView{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed; 
+  width: 750rpx;
+  height: 1334rpx; 
+  background: rgba(0, 0, 0, 0.5);
+  top: 0rpx; 
+
+  /* width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff; */
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  padding-top: 30rpx;
+  padding-bottom: 10rpx;
+  margin-left: 30rpx;
+  letter-spacing: 0;
+  line-height: 24rpx;
+  font-family: PingFangSC-Semibold;
+  font-size: 32rpx;
+  color: #313131;
+  font-weight: bold;
+}
+.title_num{
+  font-family: PingFangSC-Semibold;
+  font-size: 26rpx;
+  color: #949494;
+}
+.noLesson{
+  display: flex;
+  margin-top: 250rpx;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.noLesson_title{
+  font-family: PingFangSC-Regular;
+  font-size: 40rpx;
+  color: #CCCCCC;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 40rpx;
+}
+.noLesson_img{
+  margin-top: 100rpx;
+  width: 295rpx;
+  height: 318rpx;
+}
+/* .myLesson{
+  
+} */
+
+.loadMore{
+  margin-top: 30rpx;
+  text-align: center;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+}

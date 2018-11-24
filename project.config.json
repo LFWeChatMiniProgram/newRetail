@@ -1,0 +1,175 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"window": {
+		"navigationBarBackgroundColor": ",",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "小程序",
+		"backgroundColor": "#eeeeee",
+		"backgroundTextStyle": "light",
+		"enablePullDownRefresh": true
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.1.1",
+	"appid": "wxcce531d4178ecaae",
+	"projectname": "NewRetail",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": 0,
+					"name": "海报生成",
+					"pathName": "pages/Home/poster/poster",
+					"query": "scene = hello",
+					"scene": "1011"
+				},
+				{
+					"id": 1,
+					"name": "讲师详情",
+					"pathName": "pages/Home/lessonTeacherDetail/lessonTeacherDetail",
+					"query": "user = {user_id:1}"
+				},
+				{
+					"id": -1,
+					"name": "幻灯片",
+					"pathName": "pages/Home/shareDetail_PPT/shareDetail_PPT",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "pre_音频播放器",
+					"pathName": "pages/Prepare/diyAudioPlayer/diyAudioPlayer",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/Mine/collect/collect",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的关注",
+					"pathName": "pages/Mine/care/care",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的粉丝",
+					"pathName": "pages/Mine/fans/fans",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的购买",
+					"pathName": "pages/Mine/buy/buy",
+					"query": ""
+				},
+				{
+					"id": 9,
+					"name": "分享课详情",
+					"pathName": "pages/Home/shareDetail/shareDetail",
+					"query": "scene=836",
+					"scene": "1012"
+				},
+				{
+					"id": 10,
+					"name": "系列课学习列表",
+					"pathName": "pages/Home/seriesLesson/learnList/learnList",
+					"query": "scene=475"
+				},
+				{
+					"id": 11,
+					"name": "系列课介绍",
+					"pathName": "pages/Home/seriesLesson/introduce/introduce",
+					"query": "scene=475"
+				},
+				{
+					"id": 12,
+					"name": "干货详情",
+					"pathName": "pages/Home/essayDetail/essayDetail",
+					"query": "scene=740"
+				},
+				{
+					"id": -1,
+					"name": "准备_海报",
+					"pathName": "pages/Prepare/canvas/canvas",
+					"query": "scene=475"
+				},
+				{
+					"id": -1,
+					"name": "关于我们",
+					"pathName": "pages/Mine/aboutUs/aboutUs",
+					"query": "scene = hello",
+					"scene": "1011"
+				},
+				{
+					"id": -1,
+					"name": "登录界面",
+					"pathName": "pages/Mine/login/login",
+					"query": "scene=475"
+				},
+				{
+					"id": 16,
+					"name": "海报",
+					"pathName": "pages/Home/poster/poster",
+					"query": "",
+					"scene": "1048"
+				},
+				{
+					"id": -1,
+					"name": "背景音乐",
+					"pathName": "pages/Prepare/bgAudio/bgAudio",
+					"query": "",
+					"scene": "1048"
+				},
+				{
+					"id": -1,
+					"name": "面包屑导航",
+					"pathName": "pages/Prepare/pathNav/pathNav",
+					"query": "",
+					"scene": "1048"
+				},
+				{
+					"id": -1,
+					"name": "干货列表",
+					"pathName": "pages/Essay/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的",
+					"pathName": "pages/Mine/index/index",
+					"query": ""
+				}
+			]
+		}
+	}
+}

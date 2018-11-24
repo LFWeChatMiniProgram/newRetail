@@ -1,0 +1,34 @@
+/*
+音频播放器
+*/
+.playItem{
+  display: flex;
+  align-items: center;
+  margin: 50rpx 60rpx;
+  flex: 1;
+}
+.btn{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.progressBg{
+  height: 6rpx;
+  background:  #EEEEEE;
+  margin-left: 30rpx;
+  width: 420rpx;
+  /* flex: 1; */
+}
+.progress{
+  height: 6rpx;
+  background: rgba(53,175,92,0.70);
+}
+.time{
+  width: 90rpx;
+  text-align: right;
+  font-family: PingFangSC-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+  line-height: 24rpx;
+}

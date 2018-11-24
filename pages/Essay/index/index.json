@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "干货",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "essay": "../../component/essay/essay"
+  }
+}

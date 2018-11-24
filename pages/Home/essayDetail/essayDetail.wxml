@@ -1,0 +1,77 @@
+<import src="../../../wxParse/wxParse.wxml" />
+
+<view class='nav' hidden='{{!isFromShare}}'>
+  <view class='nav_home'>
+    <view class='nav_home_text' catchtap='backToHome'>零售前沿社首页</view>
+    <image src='../../image/other/step_mark.png' class='nav_home_img'></image>
+  </view>
+  <view class='nav_detail'>分享课详情</view>
+</view>
+<!--课程  -->
+<view class='lesson'>
+  <view class='lessonTitle'>{{info.title}}</view>
+  <view class='lesssonSubTitle' hidden='{{info.sub_title.length ? false:true}}'>
+    <view class='lesssonSubTitle_mark'></view>
+    <view class='lessonDes_content'>{{info.sub_title}}</view>
+  </view>
+  <view class='lessonTags'>
+    <view class='lessonTags_item' wx:for="{{info.tags}}" bindtap='showTopicDetail' data-topic='{{item}}'>{{item.title}}</view>
+  </view>
+  <view class='teacher'>
+    <view class='teacher_info'>
+      <view class='teacher_name'>作者：{{info.authors[0].screen_name}}</view>
+      <view class='lessonDes_learnNum'>{{info.read_number}} 人学习</view>
+    </view>
+  </view>
+  <view class='line'></view>
+  <!--操作  -->
+  <view class='operate'>
+    <view class='operate_collect' catchtap='collectCourse'>
+      <image class='operate_collect_img' src='{{info.is_bookmark?"../../image/other/collect_selected.png":"../../image/other/collect_normal.png"}}'></image>
+      <view class='operate_text {{info.is_bookmark?"selected":""}} '>{{info.bookmark_number}} 人收藏</view>
+    </view>
+    <view class='operate_like' catchtap='likeCourse'>
+      <image class='operate_like_img' src='{{info.is_like?"../../image/other/like_selected.png":"../../image/other/like_normal.png"}}'></image>
+      <view class='operate_text {{info.is_like?"selected":""}}' >{{info.like_number}} 人喜欢</view>
+    </view>
+    <view class='operate_shareImg' catchtap='turnToPoster' data-lesson='{{info}}'>
+      <image class='operate_shareImg_img' src='../../image/other/shareImg.png'></image>
+      <view class='operate_text'>一键分享</view>
+    </view>
+  </view>
+</view>
+
+
+
+<!--H5  -->
+<view class='sunmmary'>
+  <template is="wxParse" data="{{wxParseData:summary.nodes}}" />
+</view>
+<view class='main'>
+  <template is="wxParse" data="{{wxParseData:main.nodes}}" />
+</view>
+<!--关于分享嘉宾  -->
+<view class='aboutTeacher'>
+  <view class='aboutTeacher_title'>关于作者</view>
+  <view class='aboutTeacher_content'>
+    <image class='aboutTeacher_portrait' src='{{info.authors[0].avatar}}'></image>
+    <view class='aboutTeacher_name'>{{info.authors[0].screen_name}}</view>
+    <view class='aboutTeacher_job'>{{info.authors[0].signature}}</view>
+    <form bindsubmit='formSubmit' report-submit='true'>
+      <button class='aboutTeacher_care {{info.authors[0].is_followed?"selected":""}}' catchtap='careClick' form-type='submit'>{{info.authors[0].is_followed?"取消关注":"+ 关注"}}</button>
+      <!-- {{info.authors[0].follow_nums}}人 关注 -->
+    </form>
+    <view class='aboutTeacher_des'>{{info.authors[0].bio}}</view>
+    <!-- <view class='aboutTeacher_learnAboutDetail' bindtap='showTeacherDetail' data-user='{{info.authors[0]}}'><text>了解详情</text></view> -->
+    <view class='aboutTeacher_learnAboutDetail' bindtap='showTeacherDetail' data-user='{{info.authors[0]}}'>了解详情</view>
+  </view>
+</view>
+
+<!--我也要分享  -->
+<view class='joinShare' hidden='true'>
+  <view class='joinShare_title'>参与分享</view>
+  <view class='joinShare_content'>
+    <image class='joinShare_content_img'></image>
+    <view class='joinShare_content_text'>我也要分享干货</view>
+  </view>
+</view>

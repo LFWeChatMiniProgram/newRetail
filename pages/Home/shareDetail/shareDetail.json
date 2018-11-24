@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "分享课详情",
+  "usingComponents": {
+    "audioPlayer": "../../component/audioPlayer/audioPlayer"
+  }
+}

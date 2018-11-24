@@ -1,0 +1,10 @@
+/* pages/Prepare/pathNav/pathNav.wxss */
+.pathNav{
+  display: flex;
+  background: lightblue;
+}
+.pathNavItem{
+  padding-left: 20rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
